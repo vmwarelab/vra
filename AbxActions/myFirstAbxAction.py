@@ -2,10 +2,14 @@
 
 def handler(context, inputs):
     
-    myInputs = {"brand": "Ford", "model": "Mustang", "year": 1964}
-    print(myInputs)
+    new_value = '5678'
     
-    outputs = myInputs
+    outputs = {}
+    
+    outputs["customProperties"] = inputs["customProperties"]
+    outputs["customProperties"]["userDefinedVariableNumber"] = new_value
+    
+    print("userDefinedVariableNumber new value is : " + new_value)
     
     return outputs
 
