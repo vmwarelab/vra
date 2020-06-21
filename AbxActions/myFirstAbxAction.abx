@@ -1,0 +1,13 @@
+---
+exportVersion: "1"
+exportId: "8a748094729576220172ccb3e63a324c"
+name: "myFirstAbxAction"
+runtime: "python"
+entrypoint: "handler"
+inputs:
+  abxInputName: "abxInputValue"
+timeoutSeconds: 180
+deploymentTimeoutSeconds: 600
+actionType: "SCRIPT"
+provider: "on-prem"
+memoryInMB: 300
