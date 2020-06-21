@@ -2,14 +2,13 @@
 
 def handler(context, inputs):
     
-    new_value = '5678'
     
     outputs = {}
     
-    outputs["customProperties"] = inputs["customProperties"]
-    outputs["customProperties"]["userDefinedVariableNumber"] = new_value
+    outputs["__metadata"] = inputs["__metadata"]
+    user_account = outputs["__metadata"]["userName"]
     
-    print("userDefinedVariableNumber new value is : " + new_value)
+    print("User Account Name : " + user_account)
     
     return outputs
 
