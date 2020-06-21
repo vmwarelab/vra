@@ -9,5 +9,5 @@ inputs:
 timeoutSeconds: 180
 deploymentTimeoutSeconds: 600
 actionType: "SCRIPT"
-provider: "on-prem"
+provider: "aws"
 memoryInMB: 300
