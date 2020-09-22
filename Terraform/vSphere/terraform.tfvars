@@ -1,6 +1,6 @@
 # vRealize Automation
 
-# vsphere_user   = "xxxxxr@corp.local"
+#vsphere_user   = "xxxxxr@corp.local"
 # vsphere_password   = "xxxxxx"
 # vsphere_server  = "x.x.x.x" 
 
