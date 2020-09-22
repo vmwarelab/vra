@@ -1,3 +1,4 @@
+
 variable "vsphere_user" {
 }
 
