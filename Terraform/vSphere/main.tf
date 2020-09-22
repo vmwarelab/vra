@@ -6,7 +6,7 @@ provider "vsphere" {
 variable "size" {
   description = "VM Size"
   default     = "small"
-}
+ }
   
   # If you have a self-signed cert
   allow_unverified_ssl = true
