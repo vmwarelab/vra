@@ -8,11 +8,11 @@ provider "vsphere" {
 }
 
 data "vsphere_datacenter" "dc" {
-  name = "sc2dc03"
+  name = "BRAMPTON"
 }
 
 data "vsphere_datastore" "datastore" {
-  name          = "sc2c01vsan01"
+  name          = "MGMT-LocalDisk1"
   datacenter_id = data.vsphere_datacenter.dc.id
 }
 
@@ -22,7 +22,7 @@ data "vsphere_resource_pool" "pool" {
 }
 
 data "vsphere_network" "network" {
-  name          = "web"
+  name          = "DPortGroup-MGMT-Management"
   datacenter_id = data.vsphere_datacenter.dc.id
 }
 
@@ -33,7 +33,7 @@ resource "vsphere_virtual_machine" "vm" {
 
   num_cpus = 2
   memory   = 1024
-  guest_id = "Ubuntu-test"
+  guest_id = "Ubuntu_Cloud_init_Template"
 
   network_interface {
     network_id = data.vsphere_network.network.id
