@@ -3,6 +3,11 @@ provider "vsphere" {
   #password       = var.vsphere_password
   #vsphere_server = var.vsphere_server
 
+variable "size" {
+  description = "VM Size"
+  default     = "small"
+  }
+  
   # If you have a self-signed cert
   allow_unverified_ssl = true
 }
