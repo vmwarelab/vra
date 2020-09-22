@@ -1,15 +1,10 @@
-
 variable "vsphere_datacenter" {
   default = "BRAMPTON"
-  
 }
 
 variable "vsphere_datastore" {
   default = "MGMT-LocalDisk1"
 }
-
-#variable "vsphere_resource_pool" {
-#}
 
 variable "vsphere_compute_cluster" {
   default = "BRM-MGMT-CL"
@@ -24,8 +19,7 @@ variable "vsphere_virtual_machine" {
 }
 
 variable "num_cpus" {
-  default = "1"
-  
+  default = "1"  
 }
 
 variable "memory" {
