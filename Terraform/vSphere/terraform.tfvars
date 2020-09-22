@@ -1,17 +1,18 @@
 # vRealize Automation
-vsphere_user   = "xxxxxr@corp.local"
-vsphere_password   = "xxxxxx"
-vsphere_server  = "x.x.x.x" 
+
+# vsphere_user   = "xxxxxr@corp.local"
+# vsphere_password   = "xxxxxx"
+# vsphere_server  = "x.x.x.x" 
 
 # vSphere Variables
-vsphere_datacenter = "RegionA01"
-vsphere_datastore = "RegionA01-ISCSI02-COMP01"
-vsphere_resource_pool = "pks-comp-1"
-vsphere_compute_cluster = "RegionA01-COMP01"
-vsphere_network = "VM-RegionA01-vDS-COMP"
-vsphere_virtual_machine = "ubuntu1804bis"
+vsphere_datacenter = "BRAMPTON"
+vsphere_datastore = "MGMT-LocalDisk1"
+vsphere_resource_pool = "terraform-rp"
+vsphere_compute_cluster = "BRM-MGMT-CL"
+vsphere_network = "DPortGroup-MGMT-Management"
+vsphere_virtual_machine = "Ubuntu_Cloud_init_Template"
 
 # vSphere machine
-num_cpus = "2"
+num_cpus = "1"
 memory = "1024"
 virtual_machine_name = "terraform-test"
