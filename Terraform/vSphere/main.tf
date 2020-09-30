@@ -17,7 +17,7 @@ data "vsphere_datastore" "datastore" {
 }
 
 data "vsphere_resource_pool" "pool" {
-  name          = "BRM-MGMT-CL"
+  name          = "BRM-MGMT-CL/Resources"
   datacenter_id = data.vsphere_datacenter.dc.id
 }
 
