@@ -8,7 +8,7 @@ provider "vsphere" {
 }
 
 data "vsphere_datacenter" "dc" {
-  name = "BRM-MGMT-CL"
+  name = "BRAMPTON"
 }
 
 data "vsphere_datastore" "datastore" {
