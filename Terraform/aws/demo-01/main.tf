@@ -10,3 +10,9 @@ resource "aws_instance" "example" {
 variable "AWS_REGION" {
   default = "ca-central-1"
 }
+terraform {
+  backend "s3" {
+    bucket = "terraform-state-vmwlab"
+    key = "terraform/demo-01"
+  }
+}
