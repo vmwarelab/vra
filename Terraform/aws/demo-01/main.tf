@@ -14,9 +14,3 @@ variable "AWS_REGION" {
 variable "AMIS" {
   default = "ami-0431766daf444644c"
   }
-terraform {
-  backend "s3" {
-    bucket = "terraform-state-vmwlab"
-    key = "terraform/demo-01"
-  }
-}
