@@ -26,7 +26,7 @@ function Handler($context, $inputs) {
     
     if ($output.Equals($windowsString)) {
         $os_type = "Minion installed on Windows"
-        $script = "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force; Invoke-WebRequest https://repo.saltstack.com/windows/Salt-Minion-3002-Py3-x86-Setup.exe -UseBasicParsing -OutFile ~\Downloads\minion.exe"
+        $script = "[Net.ServicePointManager]::SecurityProtocol=[Net.SecurityProtocolType]::Tls12; Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force; $ProgressPreference = 'SilentlyContinue'; Invoke-WebRequest https://repo.saltstack.com/windows/Salt-Minion-3002-Py3-x86-Setup.exe -UseBasicParsing -OutFile ~\Downloads\minion.exe"
         $script2 = "~\Downloads\minion.exe /S /master=$vrss /minion-name=$hostname"
         
         Start-Sleep -s 60
