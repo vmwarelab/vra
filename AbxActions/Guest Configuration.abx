@@ -1,0 +1,15 @@
+---
+exportVersion: "1"
+exportId: "8a7480c17d3aa8bc017e6d9ab7932564"
+name: "Guest Configuration"
+runtime: "powershell"
+entrypoint: "handler"
+inputs:
+  secret:8a7480b37778e9c0017788a75dc50dce: ""
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+actionType: "SCRIPT"
+provider: "on-prem"
+configuration:
+  const_azure-system_managed_identity: false
+memoryInMB: 300
