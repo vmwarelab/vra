@@ -1,0 +1,15 @@
+---
+exportVersion: "1"
+exportId: "8a7480bf7e73b4c5017eb195c98235fa"
+name: "myFirstAbxAction"
+runtime: "python"
+entrypoint: "handler"
+inputs:
+  abxInputNameIn: "abxInputValue"
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+actionType: "SCRIPT"
+provider: "aws"
+configuration:
+  const_aws-iam_role: "cas_abx"
+memoryInMB: 300
