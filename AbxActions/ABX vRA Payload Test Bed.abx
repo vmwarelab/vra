@@ -1,0 +1,85 @@
+---
+exportVersion: "1"
+exportId: "8a7480bf7e73b4c5017eced884cd5036"
+name: "ABX vRA Payload Test Bed"
+runtime: "python"
+entrypoint: "handler"
+inputs:
+  payload:
+    tags:
+      product: "vra8"
+      project: "vmwlab"
+    zoneId: "93ee2b07-60a3-4796-b2b0-6c8f670878f2"
+    addresses:
+    - - "192.168.110.103"
+    projectId: "e444e4bc-baea-4d9b-83c2-3da63d1ee929"
+    requestId: "e991c7c1-c024-49c1-ab91-69f7e1ff3b72"
+    subnetIds:
+    - - "203a1e28-6196-4ada-ac5b-38b56ad07c6a"
+    __metadata:
+      orgId: "d2bc56a6-1faa-4d42-99f7-9be3ab0400bc"
+      headers:
+        tokenId: "LuATOpItI0Obi4stuKu+fYDoRSLdpK58zQmjyKkaP+8="
+        blocking: "true"
+        runnableId: "8a7480bf7e73b4c5017ecff3b9775236"
+        runnableType: "extensibility.abx"
+        uber-trace-id: "7df64401cc1442a6b4ae44dd3b3ab8df:3fc7140f8c5a4c44919a9f61a5bdd006:4a757c20-79ef-4edf-b405-32333f775854:0"
+        uberctx-user-id: "provisioning-xUsJ0VZfBtU97z7N"
+        eventTraceEntryId: "135c5e51-60c6-485b-9b63-f08df0d73403"
+        sampling-decision: "false"
+        uberctx-parent-id: "4a757c20-79ef-4edf-b405-32333f775854"
+        encryption-context: "b26c028e-8afa-4da9-a683-c6d1535e756b"
+        uberctx-request-trace-id: "bcb66c31-06d7-44e4-b740-9b38a6db06ff"
+        provisioning-callback-uri: "/provisioning/config/extensibility-callbacks/75fc2af5-db67-3ed8-9e89-142d12718b3e"
+      targetId: "2016e00a-4755-41ec-a318-f5bf271b9380"
+      userName: "cloudadmin"
+      eventType: "EVENT"
+      timeStamp: 1644174205183
+      sourceType: "provisioning"
+      targetType: "ComputeProvisionTaskState"
+      eventTopicId: "compute.provision.post"
+      correlationId: "b26c028e-8afa-4da9-a683-c6d1535e756b--e991c7c1-c024-49c1-ab91-69f7e1ff3b72"
+      sourceIdentity: "4816301b-749b-40c0-b5c7-95bfe84fb9c7"
+      correlationType: "contextId"
+    endpointId: "096bd6d0-45c1-45fc-977b-478f7c76cbfa"
+    blueprintId: "f47faa9c-35fa-4b4e-bb5f-71cdfddebe16"
+    componentId: "Cloud_Machine_1"
+    externalIds:
+    - "5031f902-3b3f-f247-e525-4d7445da6844"
+    resourceIds:
+    - "ac4536c6-256d-4440-bf72-051a129a50c6"
+    deploymentId: "b26c028e-8afa-4da9-a683-c6d1535e756b"
+    macAddresses:
+    - - "00:50:56:b1:4c:b4"
+    resourceNames:
+    - "vra-vm-095"
+    abxInputNameIn: "abxInputValue"
+    componentTypeId: "Cloud.Machine"
+    customProperties:
+      image: "ubuntu 16.04"
+      flavor: "small"
+      osType: "LINUX"
+      useAbx: "true"
+      vcUuid: "36c9e48f-93c5-4924-a05d-d9e9ce56d81f"
+      dnsZone: "vmwlab.local"
+      imageId: "UBUNTU-16.04-Template"
+      product: "vra 8.0"
+      project: "vmwlab"
+      tmplPass: "((secret:v1:AAFCZZDTTwlm8I0zouqE8EBA6++KwzN2BTa24A/y1f9QJFOOuZRrQA==))"
+      coreCount: "1"
+      instanceUUID: "5031f902-3b3f-f247-e525-4d7445da6844"
+      softwareName: "Ubuntu Linux (64-bit)"
+      vmFolderPath: "[MON-COMP-iSCSI-DS-01] vra-vm-095"
+      datastoreName: "MON-COMP-iSCSI-DS-01"
+      flavorMappingName: "small"
+      resourceGroupName: "vRA 8.x Machines"
+    secret:8a7480b37778e9c0017788a75dc50dce: ""
+    psecret:186efa20-344a-4775-a8d7-961b14966066: ""
+  abxInputNameIn: "abxInputValue"
+  secret:8a7480b37778e9c0017788a75dc50dce: ""
+  psecret:186efa20-344a-4775-a8d7-961b14966066: ""
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+actionType: "SCRIPT"
+provider: "aws"
+memoryInMB: 300
