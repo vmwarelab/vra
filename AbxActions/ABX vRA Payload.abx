@@ -1,0 +1,15 @@
+---
+exportVersion: "1"
+exportId: "8a7480bf7e73b4c5017ecff3b9775236"
+name: "ABX vRA Payload"
+runtime: "python"
+entrypoint: "handler"
+inputs:
+  abxInputNameIn: "abxInputValue"
+  secret:8a7480b37778e9c0017788a75dc50dce: ""
+  psecret:186efa20-344a-4775-a8d7-961b14966066: ""
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+actionType: "SCRIPT"
+provider: "aws"
+memoryInMB: 300
